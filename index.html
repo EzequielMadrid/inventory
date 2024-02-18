@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/world.ico"
+      type="image/x-icon"
+    />
+    <title>Inventory</title>
+    <script src="./app/stock.js" defer></script>
+    <script src="./app/index.js" defer></script>
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-300 font-mono">
+    <div class="p-4 container mx-auto text-center">
+      <h1 class="mb-8 text-3xl font-bold">Hey! Welcome 💀</h1>
+      <section class="mb-8">
+        <label for="swords" class="text-sm">Choose a sword please</label>
+        <select
+          name="swords"
+          id="swords"
+          class="w-2/5 p-2 border rounded text-blue-900"
+        >
+          <!-- options will be added throught js -->
+        </select>
+        <button
+          id="add-btn"
+          class="px-4 py-2 rounded bg-blue-900 hover:bg-blue-700 text-gray-200"
+        >
+          Add!
+        </button>
+      </section>
+      <section id="store" class="grid grid-cols-2 sm:grid-cols-4">
+        <template id="ghost-list">
+          <article class="relative p-4 bg-gray-200">
+            <img
+              src=""
+              alt=""
+              class="w-full h-auto rounded border-4 border-gray-600"
+            />
+            <h2 class="mb-2 text-2xl font-bold" data-name></h2>
+            <p class="mb-2 text-xl text-gray" data-description></p>
+            <h4
+              class="absolute top-2 right-2 w-6 h-6 rounded-full bg-blue-900 text-gray-200"
+              data-quantity
+            >
+              <span></span>
+            </h4>
+            <h6 class="text-gray-600" data-price></h6>
+          </article>
+        </template>
+      </section>
+    </div>
+  </body>
+</html>
