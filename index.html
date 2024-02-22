@@ -24,29 +24,25 @@
         <select
           name="swords"
           id="swords"
-          class="w-3/6 p-2 border rounded text-blue-900"
+          class="w-3/6 p-2 border rounded text-blue-200 bg-gray-900"
         >
           <!-- options will be added throught js -->
         </select>
         <button
           id="add-btn"
-          class="px-4 py-2 rounded bg-blue-900 hover:bg-blue-700 text-gray-200"
+          class="px-4 py-2 rounded border-2 bg-gray-900 text-blue-200"
         >
-          Add!
+          +
         </button>
       </section>
-      <section id="store" class="grid grid-cols-2 sm:grid-cols-4">
+      <section id="store" class="grid grid-cols-2 md:grid-cols-4">
         <template id="ghost-list">
-          <article class="relative p-2 bg-gray-200">
-            <img
-              src=""
-              alt=""
-              class="w-full h-auto rounded border-4 border-gray-600"
-            />
-            <h2 class="mb-2 text-2xl font-bold" data-name></h2>
-            <p class="mb-2 text-sm text-gray" data-description></p>
+          <article class="relative p-2">
+            <img src="" alt="" class="w-full h-auto rounded-full border-4" />
+            <h2 class="text-2xl font-bold" data-name></h2>
+            <p class="mb-2 underline text-sm text-gray" data-description></p>
             <h4
-              class="absolute top-0 right-2 w-6 h-6 rounded-full bg-blue-900 text-gray-200"
+              class="absolute top-0 right-2 w-6 h-6 rounded-full text-blue-200 bg-gray-900"
               data-quantity
             >
               <span></span>
